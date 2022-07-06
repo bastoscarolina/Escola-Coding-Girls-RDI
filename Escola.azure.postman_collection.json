@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "38d23fef-e28f-429c-8049-764896baaf23",
+		"name": "Escola",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18158311"
+	},
+	"item": [
+		{
+			"name": "Consultar todas as Turmas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Turma",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Turma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Turma pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Turma/1",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Turma",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar todos os alunos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Aluno",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Aluno pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Aluno/1",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Aluno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incluir Turmas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Go\",\r\n  \"ativo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Turma",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Turma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incluir Aluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"James\",\r\n  \"dataNascimento\": \"2022-07-03T23:42:42.330Z\",\r\n  \"sexo\": \"M\",\r\n  \"totalFaltas\": 0,\r\n  \"turmaID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Aluno",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Turmas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Turma/5",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Turma",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Alunos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Aluno/5",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Aluno",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Turmas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Turma/5",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Turma",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Alunos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://projetofinal20220704233540.azurewebsites.net/api/Aluno/4",
+					"protocol": "https",
+					"host": [
+						"projetofinal20220704233540",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Aluno",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
